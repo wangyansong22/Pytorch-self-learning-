@@ -1,0 +1,9 @@
+# PyTorch 与常用配套（默认从 PyPI 安装，一般为 CPU 版；GPU 见 README「方式二」）
+torch>=2.0.0
+torchvision>=0.15.0
+
+# 可视化与数据
+tensorboard>=2.14.0
+Pillow>=9.0.0
+numpy>=1.21.0
+opencv-python>=4.5.0

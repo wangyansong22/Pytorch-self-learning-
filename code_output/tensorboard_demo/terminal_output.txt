@@ -1,0 +1,4 @@
+<class 'PIL.JpegImagePlugin.JpegImageFile'>
+<class 'numpy.ndarray'>
+(512, 768, 3)
+<class 'numpy.ndarray'>

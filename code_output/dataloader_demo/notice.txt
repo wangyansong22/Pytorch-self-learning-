@@ -1,0 +1,2 @@
+droplast文件夹中展示当droplast=True时，最后不足一个batch的数据会被舍弃，因此总step数比droplast=False少1
+shuffle文件夹中展示当shuffle=False时，不同epoch的相同step时的batch数据相同

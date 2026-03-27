@@ -1,0 +1,32 @@
+  (pipeline): Sequential(
+    (0): Conv2d(3, 32, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (4): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Flatten(start_dim=1, end_dim=-1)
+    (7): Linear(in_features=1024, out_features=10, bias=True)
+  )
+
+torch.Size([1, 10])
+epoch 1 finished, loss for this epoch: 1621.75244140625
+epoch 2 finished, loss for this epoch: 1353.798828125
+epoch 3 finished, loss for this epoch: 1232.0855712890625
+epoch 4 finished, loss for this epoch: 1150.9541015625
+epoch 5 finished, loss for this epoch: 1088.2119140625
+epoch 6 finished, loss for this epoch: 1034.033447265625
+epoch 7 finished, loss for this epoch: 984.3416137695312
+epoch 8 finished, loss for this epoch: 938.6112060546875
+epoch 9 finished, loss for this epoch: 895.8565063476562
+epoch 10 finished, loss for this epoch: 859.8472290039062
+epoch 11 finished, loss for this epoch: 827.029296875
+epoch 12 finished, loss for this epoch: 797.5986328125
+epoch 13 finished, loss for this epoch: 770.7153930664062
+epoch 14 finished, loss for this epoch: 748.4249267578125
+epoch 15 finished, loss for this epoch: 723.2952880859375
+epoch 16 finished, loss for this epoch: 704.7259521484375
+epoch 17 finished, loss for this epoch: 688.5767211914062
+epoch 18 finished, loss for this epoch: 668.7813110351562
+epoch 19 finished, loss for this epoch: 651.5021362304688
+epoch 20 finished, loss for this epoch: 633.8187255859375
