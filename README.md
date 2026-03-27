@@ -2,7 +2,7 @@
 
 # PyTorch快速入门 学习笔记
 
-**PyTorch Learning Note**（`pytorch-learning-note`）· 面向初学者的 **PyTorch 入门与实战** 代码仓库
+**PyTorch Learning Note**（GitHub 仓库名：`Pytorch-self-learning-`）· 面向初学者的 **PyTorch 入门与实战** 代码仓库
 
 [环境准备](#环境准备) · [仓库结构](#仓库结构) · [推荐阅读顺序](#推荐阅读顺序)
 
@@ -24,7 +24,7 @@
 ## 仓库结构
 
 ```
-pytorch-learning-note/
+Pytorch-self-learning-/          # 与 GitHub 仓库名一致；克隆后目录名通常如此
 ├── code/                    # 示例源码（按主题分文件，可单独运行）
 ├── code_output/             # 运行输出：终端记录、说明文字、对比图、权重等（与 code 中脚本对应）
 ├── dataset/                 # 本地数据集（如 CIFAR-10、教程用图像等）
@@ -111,8 +111,8 @@ flowchart LR
 依赖见仓库根目录 [`requirements.txt`](requirements.txt)（`torch`、`torchvision`、`tensorboard`、`Pillow`、`numpy`、`opencv-python`）。克隆后建议用 Conda 单独建环境，再安装依赖：
 
 ```bash
-git clone https://github.com/<你的用户名>/pytorch-learning-note.git
-cd pytorch-learning-note
+git clone https://github.com/wangyansong22/Pytorch-self-learning-.git
+cd Pytorch-self-learning-
 
 conda create -n pytorch-learning python=3.10 -y
 conda activate pytorch-learning
@@ -145,7 +145,7 @@ tensorboard --logdir=../logs
 ### 1. 在 GitHub 上新建仓库
 
 1. 登录 [GitHub](https://github.com)，右上角 **+** → **New repository**。  
-2. **Repository name** 填 `pytorch-learning-note`（或与本地打算用的名字一致）。  
+2. **Repository name** 须与 GitHub 上已有仓库一致（本仓库为 `Pytorch-self-learning-`）。  
 3. 选 **Public**；**不要**勾选「Add a README」等（本地已有文件）。  
 4. 点 **Create repository**，页面会给出后续命令，与下面类似。
 
@@ -154,7 +154,7 @@ tensorboard --logdir=../logs
 在**项目根目录**（含 `README.md`、`code/` 的那一层）执行：
 
 ```bash
-cd /path/to/pytorch-learning-note   # 换成你本机实际路径
+cd /path/to/Pytorch-self-learning-   # 换成你本机实际路径
 
 git init
 git branch -M main
@@ -162,7 +162,7 @@ git add .
 git status                          # 确认没有 logs/ 被加入
 git commit -m "Initial commit: PyTorch learning notes"
 
-git remote add origin https://github.com/<你的用户名>/pytorch-learning-note.git
+git remote add origin https://github.com/wangyansong22/Pytorch-self-learning-.git
 git push -u origin main
 ```
 
@@ -171,7 +171,7 @@ git push -u origin main
 **SSH 用户**（已配置 `ssh-key`）可把 `remote` 换成：
 
 ```bash
-git remote add origin git@github.com:<你的用户名>/pytorch-learning-note.git
+git remote add origin git@github.com:wangyansong22/Pytorch-self-learning-.git
 ```
 
 ### 3. 之后有改动时
