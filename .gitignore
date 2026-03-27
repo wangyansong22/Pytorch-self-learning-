@@ -21,5 +21,5 @@ env/
 .DS_Store
 Thumbs.db
 
-# 可选：若不想把下载的数据集一并上传，取消下一行注释
-# dataset/
+# 本地数据集（含 CIFAR 等压缩包，超过 GitHub 单文件 100MB 限制，勿提交）
+dataset/
