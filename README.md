@@ -140,51 +140,6 @@ tensorboard --logdir=../logs
 
 ---
 
-## 推送到 GitHub（首次上传）
-
-仓库根目录已包含 [`.gitignore`](.gitignore)，**默认不跟踪 `logs/`**，避免把 TensorBoard 事件文件推上去。
-
-### 1. 在 GitHub 上新建仓库
-
-1. 登录 [GitHub](https://github.com)，右上角 **+** → **New repository**。  
-2. **Repository name** 须与 GitHub 上已有仓库一致（本仓库为 `Pytorch-self-learning-`）。  
-3. 选 **Public**；**不要**勾选「Add a README」等（本地已有文件）。  
-4. 点 **Create repository**，页面会给出后续命令，与下面类似。
-
-### 2. 本地初始化并推送
-
-在**项目根目录**（含 `README.md`、`code/` 的那一层）执行：
-
-```bash
-cd /path/to/Pytorch-self-learning-   # 换成你本机实际路径
-
-git init
-git branch -M main
-git add .
-git status                          # 确认没有 logs/ 被加入
-git commit -m "Initial commit: PyTorch learning notes"
-
-git remote add origin https://github.com/wangyansong22/Pytorch-self-learning-.git
-git push -u origin main
-```
-
-若 GitHub 已要求用 **Personal Access Token** 代替密码，在提示输入密码时粘贴 Token。
-
-**SSH 用户**（已配置 `ssh-key`）可把 `remote` 换成：
-
-```bash
-git remote add origin git@github.com:wangyansong22/Pytorch-self-learning-.git
-```
-
-### 3. 之后有改动时
-
-```bash
-git add .
-git commit -m "说明本次改了什么"
-git push
-```
-
----
 
 ## 许可证与致谢
 
