@@ -122,6 +122,8 @@ pip install -r requirements.txt
 
 说明：`pip install -r requirements.txt` 默认会装 **CPU 版** PyTorch，可跑通本仓库大部分示例；无独显时把脚本里的 `device` 设为 `cpu` 即可。
 
+**关于 `dataset/`**：该目录**不会**随仓库上传（已在 [`.gitignore`](.gitignore) 中忽略），以控制体积并避免超过 GitHub 单文件大小限制。克隆后首次运行相关脚本时，一般会按代码里的路径**自动下载** CIFAR-10 等到本地 `dataset/`，或按各脚本注释准备自定义数据即可。
+
 若需要 **NVIDIA GPU + CUDA**，请先按 [PyTorch 官网](https://pytorch.org) 用 Conda 安装带 CUDA 的 `pytorch` / `torchvision`，再执行 `pip install tensorboard Pillow numpy opencv-python`（勿再 `pip install torch`，以免覆盖成 CPU 版）。
 
 ### 运行示例与 TensorBoard
